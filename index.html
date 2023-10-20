@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-menu">
+            <div class="container">
+              <a class="navbar-brand nav-logo"><img src="img/logo.svg" alt="Logo" width="33" height="30" background="white" class="d-inline-block align-text-top">   InMoviendo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end nav-menu" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Compras">Compra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+          <div class="container-header">
+            <div class="row">
+              <div class="col-lg-6">
+                <div id="carouselHeroCaptions" class="carousel slide " data-bs-ride="carousel">
+      
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+      
+                  <div class="carousel-inner ">
+      
+                    <div class="carousel-item active">
+                      <img src="img/imagen1.jpg" class="d-block w-100" alt="Slide1">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>¡Busca el hogar deseado!</h5>
+                        <p>Descubre tu hogar perfecto con nosotros. Ofrecemos una amplia gama de propiedades que se adaptan a tus necesidades y presupuesto.</p>
+                      </div>
+                    </div>
+      
+                    <div class="carousel-item">
+                      <img src="img/imagen2.jpg" class="d-block w-100" alt="Slide2">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Vende tus propiedades con nosotros!</h5>
+                        <p>Maximiza el valor de tu propiedad con nuestros servicios de venta. Nuestro equipo dedicado se encargará de todo el proceso.</p>
+                      </div>
+                    </div>
+      
+                    <div class="carousel-item">
+                      <img src="img/imagen3.jpg" class="d-block w-100" alt="Slide3">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio Personalizado</h5>
+                        <p>Entendemos que cada cliente es único. Trabajaremos contigo para encontrar la propiedad que se adapte a tus necesidades y estilo de vida.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/imagen4.jpg" class="d-block w-100" alt="Slide4">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Tu futuro comienza aqui!!</h5>
+                        <p>En nuestra inmobiliaria, creemos que cada propiedad es el comienzo de un nuevo capítulo en tu vida. Permítenos ayudarte a escribir tu historia!.</p>
+                      </div>
+                    </div>
+      
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+                <div class="col-lg-6">
+                <form class="row g-3 formulario">
+                  <h3>Encontrar tu hogar soñado es muy facil!</h3>
+                  <div class="col-12">
+                    <label for="inputCity" class="form-label"><i class="fa-solid fa-map-pin"></i></label>
+                    <input type="search" class="form-control" id="inputAddress" placeholder="Busca por cuidad o barrio..">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputState" class="form-label"><i class="fa-solid fa-house" style="color: #000000;"></i> Tipo de vivienda</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>...</option>
+                      
+                      <option value="1">Casa</option>
+                      <option value="2">Apartamento</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="inputState" class="form-label"><i class="fa-solid fa-bed"></i> Habitaciones</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>...</option>
+                      
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" href="#Compras" class="btn btn-form">Encontrar mi hogar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        
+    </header>
+
+    <main>
+
+
+        <section id="Nosotros" style="background-color: #D98324;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <img src="img/nosotros 2.jpg" alt="Motorbike1">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>SOBRE NOSOTROS</h1>
+                        <p>Hace más de dos décadas, un pequeño grupo de apasionados por la arquitectura y el servicio al cliente se unió para fundar lo que hoy conocemos como InMoviendo. Desde entonces, hemos construido un legado de excelencia en el mercado inmobiliario que ha perdurado a lo largo de las generaciones. Nuestra historia comenzó en 2000 cuando un visionario equipo de profesionales se propuso cambiar la forma en que las personas encontraban sus hogares. Con determinación y un compromiso inquebrantable con la satisfacción del cliente, comenzamos a construir nuestro camino en la industria inmobiliaria. Con el tiempo, nuestras operaciones se expandieron, abarcando un amplio espectro de servicios que incluyen ventas, alquileres, inversión y desarrollo. Esta diversificación nos permitió adaptarnos a las cambiantes necesidades del mercado y servir a una clientela diversa. El corazón de nuestra inmobiliaria siempre ha sido la confianza que depositan en nosotros nuestros valiosos clientes. Hemos tenido el honor de ayudar a miles de personas y familias a encontrar el lugar que llaman hogar, y esta confianza sigue siendo nuestra mayor recompensa.</p>
+
+                        <a href="#">Conocer mas</a>
+                    </div>
+                </div>
+            </div>
+        </section >
+
+        <section id="Compras" style="background: white;">
+          <h1>Compra una de nuestras propiedades</h1>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100 ">
+                <img src="img/card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;"> Apartamento | Disponible</h5>
+                  <p class="card-text" style="text-transform: uppercase; border-bottom: 3px solid #0b132b; color: red;"><br> <b>Arriendo</b> <p style="font-size: xx-small;">Admin. incluida</p>$1.200.000</p>
+                  <a href="#">Ver..</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Hace 2 minutos</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;" >Casa Campestre | Disponible</h5>
+                  <p class="card-text" style="text-transform: uppercase; border-bottom: 3px solid #0b132b; color: red;"> <br><b>Compra</b><p style="font-size: xx-small;">Admin. incluida</p>$200.000.000</p>
+                  <a href="#">Ver..</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Hace 5 minutos</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ">
+                <img src="img/card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Apto | 
+                   Disponible</h5>
+                  <p class="card-text" style="text-transform: uppercase; border-bottom: 3px solid #0b132b; color: red;"> <br> <b>Arriendo</b> <p style="font-size: xx-small;">Admin. incluida</p>$1.900.000</p>
+                  <a href="#">Ver..</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Hace 3 dias</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Casa | Disponible</h5>
+                  <p class="card-text" style="text-transform: uppercase; border-bottom: 3px solid #0b132b; color: red;" > <br><b>Arriendo </b> <p style="font-size: xx-small;">Admin. incluida</p>$3.600.000</p>
+                  <a href="#">Ver..</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Hace una semana</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br><br>
+
+        <section id="Pasos">
+          <h3>Consigue tu hogar soñado en 3 pasos!</h3>
+          <div class="row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card card-estilo">
+                <div class="card-body">
+                  <h5 class="card-title">Busca con tranquilidad</h5>
+                  <p class="card-text texto-p">Te ayudaremos a buscar una mejor opcion para ti</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card card-estilo">
+                <div class="card-body">
+                  <h5 class="card-title">Agenda tu visita</h5>
+                  <p class="card-text texto-p">Solicita tu visita ya sea virtual o presencial, a tu preferencia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card card-estilo">
+                <div class="card-body">
+                  <h5 class="card-title">Firma tu contrato</h5>
+                  <p class="card-text texto-p">Y desde ahora empieza a vivir en el hogar de tus sueños, feliz y comodo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br><br>
+
+        <section id="Servicios" style="background-color: #F3F5F7">
+            <div class="container text-center">
+                <h2><span>Servicios</span></h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-mg-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios1.jpg" alt="servicios1" class="w-100">
+                            
+                            <a href="#"> APOYO A DOMICILIOS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios2.jpg" alt="servicios2" class="w-100">
+                            
+                            <a href="#"> UBICACIONES ESTRATEGICAS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios3.jpg" alt="servicios3" class="w-100">
+                            
+                            <a href="#"> VENDE TU CASA</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios4.jpg" alt="servicios4" class="w-100">
+                            
+                            <a href="#"> ASESORAMIENTO DE FINANZAS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios5.jpg" alt="servicios5" class="w-100">
+                            
+                            <a href="#"> EXPLORA NUESTRAS PROPIEDADES</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servicio">
+                            <img src="img/Servicios/servicios6.jpg  " alt="servicios6" class="w-100">
+                            
+                            <a href="#">COMPRA TU NUEVO HOGAR</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+      <section id="Comentarios">
+        <div class="container" >
+          <div id="carouselReview" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active" style="text-align: center;">
+                  <blockquote class="blockquote mb-0">
+                    <p>Lo que dicen los que han sido parte de InMoviendo</p>
+                    <footer class="blockquote-footer">"Mi experiencia con InMoviendo ha sido excepcional. Desde el primer contacto con su equipo, me impresionó su profesionalismo y compromiso." <cite title="Source Title"> <br> -Ramon </cite></footer>
+                  </blockquote>
+              </div>
+
+              <div class="carousel-item" style="text-align: center;">
+                  <blockquote class="blockquote mb-0">
+                    <p>Lo que dicen los que han sido parte de InMoviendo</p>
+                    <footer class="blockquote-footer">Su plataforma en línea facilitó la búsqueda y comparación de propiedades. Recomiendo encarecidamente InMoviendo para aquellos que buscan una experiencia inmobiliaria de alta calidad.<cite title="Source Title"> <br> -Tatiana</cite></footer>
+                  </blockquote>
+              </div>
+              <div class="carousel-item">
+                  <blockquote class="blockquote mb-0" style="text-align: center;">
+                    <p>Lo que dicen los que han sido parte de InMoviendo</p>
+                    <footer class="blockquote-footer">"Han demostrado una profunda comprensión del mercado inmobiliario y han trabajado incansablemente para encontrar la propiedad perfecta que se ajuste a mis necesidades y presupuesto." <cite title="Source Title"> <br> -Andrea </cite></footer>
+                  </blockquote>
+              </div>
+              <div class="carousel-item">
+                  <blockquote class="blockquote mb-0" style="text-align: center;">
+                    <p>Lo que dicen los que han sido parte de InMoviendo</p>
+                    <footer class="blockquote-footer">"Su atención personalizada y la calidad de su servicio son inigualables. No puedo agradecerles lo suficiente por hacer que la compra de mi hogar sea una experiencia tan positiva." <cite title="Source Title"> <br> -Carlos </cite></footer>
+                  </blockquote>
+              </div>
+            </div>
+             <a class="carousel-control-prev" type="far fa-circle fa-stack-2x" data-bs-target="#carouselReview" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-bs-target="#carouselReview" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="Preguntas">
+
+      </section>
+
+        <section id="Contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>¡Contactanos!</h2>
+                        <p>Escribe tus datos y cuentanos tu inquietud</p>
+                        <form>
+                            <div class="mb-3">
+                              <label for="Nombre" class="form-label">Nombre Completo</label>
+                              <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="Area texto" class="form-label">Area de texto</label>
+                                <textarea class="form-control" id="Area texto" rows="3"></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-form">Enviar</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53506.3935951354!2d-74.14184625251028!3d4.6143264332788725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f996f79f4e283%3A0x5856b6b66ab6bd34!2sCENIGRAF!5e0!3m2!1ses-419!2sco!4v1696611057267!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                </div>
+                
+            </div>
+            
+        </section>
+       
+
+
+    </main>
+
+    <footer>
+        <p>© 2023 - Andres Felipe Sanchez Gomez</p>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/e9fcd68bbf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
